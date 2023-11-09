@@ -12,7 +12,7 @@ namespace ModulControl {
 
         private double Ran() {
             var random = new Random();
-            var randomDouble = random.NextDouble() * (10.0 - 5.0) + 5.0;
+            var randomDouble = random.NextDouble() * (15 - 5) + 5;
             return Math.Round(randomDouble, 1);
         }
 

@@ -1,3 +1,4 @@
+using System;
 namespace ModulControl {
     public class InfoShow {
         private string info;
@@ -30,27 +31,27 @@ namespace ModulControl {
         }
 
         private void VolumeInfo(IHasVolume hasVolume) {
-            info += $"Об'єм: {hasVolume.V()} \t";
+            info += $"Об'єм: {Math.Round(hasVolume.V(), 3)} \t";
         }
 
         private void BichnaInfo(IHasBichna hasBichna) {
-            info += $"Площа бічна: {hasBichna.S_Bichna()} \t";
+            info += $"Площа бічна: {Math.Round(hasBichna.S_Bichna(), 3)} \t";
         }
 
         private void BaseInfo(IHasBase hasBase) {
-            info += $"Площа основи: {hasBase.S_Base()} \t";
+            info += $"Площа основи: {Math.Round(hasBase.S_Base(), 3)} \t";
         }
 
         private void PInfo(IHasP hasP) {
-            info += $"Периметр: {hasP.P()} \t";
+            info += $"Периметр: {Math.Round(hasP.P(), 3)} \t";
         }
 
         private void OpisanoInfo(IHasOpisano hasOpisano) {
-            info += $"Радіус Описаної: {hasOpisano.R_Opisano()} \t";
+            info += $"Радіус Описаної: {Math.Round(hasOpisano.R_Opisano(), 3)} \t";
         }
 
         private void VpisanoInfo(IHasVpisano hasVpisano) {
-            info += $"Радіус Описаної: {hasVpisano.R_Vpisano()} \t";
+            info += $"Радіус Описаної: {Math.Round(hasVpisano.R_Vpisano(), 3)} \t";
         }
     }
 }
