@@ -1,7 +1,7 @@
 using System;
 
 namespace ModulControl {
-    public class Pentagon_Pyramid : Figure {
+    public class Pentagon_Pyramid : IFigure, IHasBase, IHasVolume {
         private double _h; //Висота
         private double _l; //Довжина грані
         private Pentagon _pent;

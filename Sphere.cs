@@ -1,7 +1,7 @@
 using System;
 
 namespace ModulControl {
-    public class Sphere : Figure {
+    public class Sphere : IFigure, IHasVolume {
         private double _r;
 
         public Sphere(double r) {

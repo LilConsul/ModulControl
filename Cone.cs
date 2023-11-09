@@ -1,6 +1,6 @@
 using System;
 namespace ModulControl {
-    public class Cone : Figure {
+    public class Cone : IFigure, IHasBichna, IHasBase {
         private double _r;
         private double _l;
         private double _h;

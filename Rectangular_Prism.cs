@@ -1,7 +1,7 @@
 using System;
 
 namespace ModulControl {
-    public class Rectangular_Prism : Figure {
+    public class Rectangular_Prism : IFigure, IHasVolume, IHasBase, IHasBichna, IHasP {
         private double _h; //Висота
         private double _a; //Довжина сторони основи
         private Ractangle _rac;
@@ -27,10 +27,10 @@ namespace ModulControl {
         }
 
         public double S_Bichna() {
-            return P_Base() * _h;
+            return P() * _h;
         }
 
-        public double P_Base() {
+        public double P() {
             return _a * 4;
         }
     }

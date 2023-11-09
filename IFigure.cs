@@ -1,5 +1,5 @@
 namespace ModulControl {
-    public interface Figure {
+    public interface IFigure {
         double S();
     }
 }

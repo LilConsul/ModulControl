@@ -1,7 +1,7 @@
 using System;
 
 namespace ModulControl {
-    public class Ractangle : Figure {
+    public class Ractangle : IFigure, IHasP,  IHasOpisano {
         private double _a;
         private double _b;
 

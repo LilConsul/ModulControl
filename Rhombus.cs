@@ -1,7 +1,7 @@
 using System;
 
 namespace ModulControl {
-    public class Rhombus : Figure {
+    public class Rhombus : IFigure, IHasP, IHasVpisano{
         private double _a;
         private double _h;
 

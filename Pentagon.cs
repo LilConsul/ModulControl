@@ -1,7 +1,7 @@
 using System;
 
 namespace ModulControl {
-    public class Pentagon : Figure {
+    public class Pentagon : IFigure, IHasP {
         private double _a;
         private double _d;
 
