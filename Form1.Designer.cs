@@ -24,17 +24,84 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.numElem = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGrid = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.generate = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.SuspendLayout();
+            // 
+            // numElem
+            // 
+            this.numElem.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numElem.Location = new System.Drawing.Point(12, 63);
+            this.numElem.Name = "numElem";
+            this.numElem.Size = new System.Drawing.Size(169, 31);
+            this.numElem.TabIndex = 0;
+            this.numElem.Text = "1";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(12, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(185, 37);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "К-сть елементів";
+            // 
+            // dataGrid
+            // 
+            this.dataGrid.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { this.Column1 });
+            this.dataGrid.EnableHeadersVisualStyles = false;
+            this.dataGrid.Location = new System.Drawing.Point(238, 23);
+            this.dataGrid.Name = "dataGrid";
+            this.dataGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataGrid.Size = new System.Drawing.Size(714, 415);
+            this.dataGrid.TabIndex = 3;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Інформація";
+            this.Column1.Name = "Column1";
+            // 
+            // generate
+            // 
+            this.generate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.generate.Location = new System.Drawing.Point(12, 335);
+            this.generate.Name = "generate";
+            this.generate.Size = new System.Drawing.Size(195, 99);
+            this.generate.TabIndex = 4;
+            this.generate.Text = "Згенерувати";
+            this.generate.UseVisualStyleBackColor = true;
+            this.generate.Click += new System.EventHandler(this.generate_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(964, 446);
+            this.Controls.Add(this.generate);
+            this.Controls.Add(this.dataGrid);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.numElem);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
         }
+
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+
+        private System.Windows.Forms.Button generate;
+
+        private System.Windows.Forms.DataGridView dataGrid;
+
+        private System.Windows.Forms.TextBox numElem;
+        private System.Windows.Forms.Label label1;
 
         #endregion
     }

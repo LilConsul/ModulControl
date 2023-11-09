@@ -5,8 +5,8 @@ namespace ModulControl {
 
         public string GetInfo(IFigure _figure) {
             figure = _figure;
-            info = $"Тип: {_figure.GetType().Name}\t";
-            info += $"Площа: {_figure.S()}\t";
+            info = $"Тип: {_figure.GetType().Name} \t";
+            info += $"Площа: {_figure.S()} \t";
 
             if (figure is IHasVolume)
                 VolumeInfo((IHasVolume)figure);
@@ -30,27 +30,27 @@ namespace ModulControl {
         }
 
         private void VolumeInfo(IHasVolume hasVolume) {
-            info += $"Об'єм: {hasVolume.V()}\t";
+            info += $"Об'єм: {hasVolume.V()} \t";
         }
 
         private void BichnaInfo(IHasBichna hasBichna) {
-            info += $"Площа бічна: {hasBichna.S_Bichna()}\t";
+            info += $"Площа бічна: {hasBichna.S_Bichna()} \t";
         }
 
         private void BaseInfo(IHasBase hasBase) {
-            info += $"Площа основи: {hasBase.S_Base()}\t";
+            info += $"Площа основи: {hasBase.S_Base()} \t";
         }
 
         private void PInfo(IHasP hasP) {
-            info += $"Периметр: {hasP.P()}\t";
+            info += $"Периметр: {hasP.P()} \t";
         }
 
         private void OpisanoInfo(IHasOpisano hasOpisano) {
-            info += $"Радіус Описаної: {hasOpisano.R_Opisano()}\t";
+            info += $"Радіус Описаної: {hasOpisano.R_Opisano()} \t";
         }
 
         private void VpisanoInfo(IHasVpisano hasVpisano) {
-            info += $"Радіус Описаної: {hasVpisano.R_Vpisano()}\t";
+            info += $"Радіус Описаної: {hasVpisano.R_Vpisano()} \t";
         }
     }
 }
