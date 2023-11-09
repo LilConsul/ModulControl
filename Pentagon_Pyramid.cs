@@ -28,7 +28,7 @@ namespace ModulControl {
         }
 
         public double V() {
-            return (1 / 3) * S() * _h;
+            return  (S() * _h)/3;
         }
     }
 }

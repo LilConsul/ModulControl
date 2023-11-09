@@ -55,10 +55,8 @@ namespace ModulControl {
                 GenerateArray(num);
                 ShowList();
             }
-            catch (Exception exception)
-            {
-                Console.WriteLine(exception);
-                throw;
+            catch (Exception exception) {
+                MessageBox.Show(exception.Message, "Помилка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

@@ -13,7 +13,7 @@ namespace ModulControl {
         }
 
         public double S() {
-            return 1 / 2 * P() * _d;
+            return (P() * _d) / 2;
         }
 
         public double P() {

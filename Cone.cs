@@ -22,7 +22,7 @@ namespace ModulControl {
         }
 
         public double V() {
-            return (1 / 3) * _h * S_Base();
+            return (_h * S_Base())/3;
         }
 
         public double S_Base() {
